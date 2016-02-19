@@ -20,32 +20,26 @@ You might put the toolchain to `/opt` or any location you like.
 Start compile
 ----
 * Grab a valid kernel config from our repo
-
 ```shell
-  cd linux
-  curl https://raw.githubusercontent.com/mqmaker/witi-config/master/witi_kernel_config_default > .config
+cd linux
+curl https://raw.githubusercontent.com/mqmaker/witi-config/master/witi_kernel_config_default > .config
 ```
 * You might want to customize your kernel
-
 ```shell
 export PATH=/opt/mips-2012.03/bin/:$PATH
 make ARCH="mips" menuconfig
 ```
-
 * Compile the kernel
 ```
 export PATH=/opt/mips-2012.03/bin/:$PATH
-
 rm -vf uImage*
 rm -vf vmlinux*
-
 make \
 -j8 \
 CROSS_COMPILE="mipsel-linux-" \
 ARCH="mips" \
 CC="mipsel-linux-gcc -D__linux__" \
 uImage
-
 mipsel-linux-objcopy \
 -O binary \
 -R .reginfo \
@@ -55,9 +49,7 @@ mipsel-linux-objcopy \
 -R .mdebug \
 -R .note.gnu.build-id \
 -S vmlinux vmlinux
-
 lzma vmlinux
-
 mkimage \
 -A mips \
 -O linux \
