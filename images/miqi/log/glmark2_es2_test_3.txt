@@ -1,0 +1,47 @@
+linaro@linaro-alip:~$ glmark2-es2  --fullscreen
+=======================================================
+    glmark2 2014.03+git20150611.fa71af2d
+=======================================================
+    OpenGL Information
+    GL_VENDOR:     ARM
+    GL_RENDERER:   Mali-T760
+    GL_VERSION:    OpenGL ES 3.1 v1.r9p0-05rel0.33547871ac3cf81fe8d1281498205039
+=======================================================
+[build] use-vbo=false: FPS: 59 FrameTime: 16.949 ms
+[build] use-vbo=true: FPS: 59 FrameTime: 16.949 ms
+[texture] texture-filter=nearest: FPS: 60 FrameTime: 16.667 ms
+[texture] texture-filter=linear: FPS: 60 FrameTime: 16.667 ms
+[texture] texture-filter=mipmap: FPS: 60 FrameTime: 16.667 ms
+[shading] shading=gouraud: FPS: 60 FrameTime: 16.667 ms
+[shading] shading=blinn-phong-inf: FPS: 60 FrameTime: 16.667 ms
+[shading] shading=phong: FPS: 60 FrameTime: 16.667 ms
+[shading] shading=cel: FPS: 60 FrameTime: 16.667 ms
+[bump] bump-render=high-poly: FPS: 60 FrameTime: 16.667 ms
+[bump] bump-render=normals: FPS: 60 FrameTime: 16.667 ms
+[bump] bump-render=height: FPS: 60 FrameTime: 16.667 ms
+[effect2d] kernel=0,1,0;1,-4,1;0,1,0;: FPS: 60 FrameTime: 16.667 ms
+[effect2d] kernel=1,1,1,1,1;1,1,1,1,1;1,1,1,1,1;: FPS: 30 FrameTime: 33.333 ms
+[pulsar] light=false:quads=5:texture=false: FPS: 60 FrameTime: 16.667 ms
+[desktop] blur-radius=5:effect=blur:passes=1:separable=true:windows=4: FPS: 30 FrameTime: 33.333 ms
+[desktop] effect=shadow:windows=4: FPS: 60 FrameTime: 16.667 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 59 FrameTime: 16.949 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 59 FrameTime: 16.949 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 59 FrameTime: 16.949 ms
+[ideas] speed=duration: FPS: 60 FrameTime: 16.667 ms
+[jellyfish] <default>: FPS: 60 FrameTime: 16.667 ms
+[terrain] <default>: FPS: 8 FrameTime: 125.000 ms
+[shadow] <default>: FPS: 59 FrameTime: 16.949 ms
+[refract] <default>: FPS: 29 FrameTime: 34.483 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 60 FrameTime: 16.667 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 60 FrameTime: 16.667 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 60 FrameTime: 16.667 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 60 FrameTime: 16.667 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 59 FrameTime: 16.949 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 59 FrameTime: 16.949 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 60 FrameTime: 16.667 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 59 FrameTime: 16.949 ms
+=======================================================
+                                  glmark2 Score: 55 
+=======================================================
+linaro@linaro-alip:~$ 
+
